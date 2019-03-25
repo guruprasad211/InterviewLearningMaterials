@@ -1,0 +1,136 @@
+
+http://www.studytonight.com/java/collection-classes.php
+https://www.codeschool.com/courses/shaping-up-with-angular-js  
+
+http://help.adobe.com/en_US/livecycle/10.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7e32.html
+
+
+Interview questions
+-------------------------
+- persistence context
+http://openjpa.apache.org/builds/1.2.3/apache-openjpa/docs/jpa_overview_emfactory_perscontext.html
+-diff Hibernate and JPA
+
+As you state JPA is just a specification, meaning there is no implementation. You can annotate your classes as much as you would like with JPA annotations, however without an implementation nothing will happen. Think of JPA as the guidelines that must be followed or an interface, while Hibernate's JPA implementation is code that meets the API as defined by the JPA specification and provides the under the hood functionality.
+
+When you use Hibernate with JPA you are actually using the Hibernate JPA implementation. The benefit of this is that you can swap out Hibernate's implementation of JPA for another implementation of the JPA specification. When you use straight Hibernate you are locking into the implementation because other ORMs may use different methods/configurations and annotations, therefore you cannot just switch over to another ORM.
+Many enterprise Java developers use lightweight persistent objects provided by open-source frameworks or Data Access Objects instead of entity beans: entity beans and enterprise beans had a reputation of being too heavyweight and complicated, and one could only use them in Java EE application servers. Many of the features of the third-party persistence frameworks were incorporated into the Java Persistence API, and as of 2006 projects like Hibernate (version 3.2) and Open-Source Version TopLink Essentials have become implementations of the Java Persistence API.
+
+
+-merge and persist diffrence
+- ditached entity in hibernate
+- lifecycle of entity
+http://openjpa.apache.org/builds/1.2.3/apache-openjpa/docs/jpa_overview_em_lifecycle.html
+
+-how to configure spring application or move to spring web app
+- how to create n number of singeton instances
+- wht is encapsulation , how to achive 
+-how to improve performance for an application
+-how to configure multiple dialects in hibernate/spring app
+
+
+Pending items:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Standered charted Reversal 
+201507140184
+
+
+naukri.com
+----------
+venunaidu@gmail.com
+Zaq1zaq1
+
+
+
+
+icici bank
+------------
+ref  sr3676796693
+
+sr368151007 - To Branch
+
+sr368151404- counter persion 
+
+
+Siva HDFC Account:
+---------------------
+
+
+
+
+Expris: okonvenjlr
+https://ww2.welcomeclient.com 
+
+
+http://www.tutorialspoint.com/design_pattern/design_pattern_quick_guide.htm
+
+
+Java
+------------
+
+http://tutorials.jenkov.com/java-concurrency/costs.html
+
+http://www.journaldev.com/4098/java-heap-memory-vs-stack-memory-difference
+
+Jabbong Shoping
+--------------
+Thank you for placing order with Jabong.com! Your order number is: 141127635935035 
+
+
+
+Venu Voter ID: NTG1004449
+Aadhar number: 743132903810
+
+
+
+Usha PAN Num:AKCPR6962L
+PF Num: AP/Hy/37885/012839
+
+
+Venu PF num: KN/35048/2634
+
+Usha Lic
+----------
+ushalic1984
+Usha1984
+
+
+venugopalkoneni
+venukoneni
+
+
+HDFC Usha: 
+05231610069852
+
+PDF merge
+
+
+http://help.adobe.com/en_US/livecycle/9.0/programLC/help/index.htm?content=000967.html
+
+http://keisan.casio.com/exec/system/1322718508
+
+
+
+Manju- transfer
+------------------
+Thank you for Banking with us.
+Your request for IMPS Funds Transfer transaction of Rs 15000 has been accepted.
+The Reference Number for your transaction is : 511815179626.
+Request you to check the status of your transaction in "View IMPS Funds transfer".

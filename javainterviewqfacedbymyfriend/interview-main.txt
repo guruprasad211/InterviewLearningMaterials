@@ -1,0 +1,139 @@
+
+Servlets:
+-------------
+a) How do you get the count of how many times the Servlet was accessed?
+ Ans: Use Filters and in the doFilter() method, mantain a counter which gets stored in the servletContext.
+ 
+b) How do you get the no. of users who accessed your application?
+ Ans: Use HttpSessionListener and increment/decrement the userCount variable which gets stored in the servletContext on the sessionCreated() and sessionDestroyed() method.
+ 
+c) What is the life cycle of ServletContextListener?
+ Ans: contextInitialized() and contextDestroyed()
+ 
+d) What is the life cycle of Filter?
+ Ans: init, doFilter, destroy
+ 
+e) What is the difference between Page and PageContext?(Courtesy:Suman)
+ Ans: page and pageContext are implicit variables.
+ page : page is of class java.lang.Object,and it refers to instance of generated servlet.It is declared as
+ Object page=this;
+ // this refers to the instance of this servlet page cannot be used to directly call the servlet methods.
+ Usages of Page:
+ 1) Error bcoz page is Object type
+ 2) <%=((servlet)page).getServletInfo()%> <—-OK:typecast
+ 3) <%=this.getServletInfo()%> <——-OK
+ 
+pageContext :
+ pageContext is of type javax.servlet.jsp.PageContext.
+ pageContext class is an abstract class.
+ Usages of PageContext:
+ 1) provide convenience methods to get and set attributes in diff scopes.
+ 2) provide convenience methods for transfering requests to other resources in the web application
+ void include(String relativeURL) & void forward(String relativeURL)
+ e.g. pageContext.forward(“suman.jsp”);
+ 3)store the references to implicit objects
+ 
+e) How do you ensure that a user session is closed , when actually the user has closed the browser window without logging out explicity?
+ Ans: In HttpSession, you have a method by the name getLastAccessedTime() which can be used to identify the in-active period and invalidate the session by calling session.inValidate()
+ 
+f) What are the attributes of a ConnectionPool?
+
+ 
+g) How do you download a file from a Servlet?
+
+ 
+1)In place of inti() if i write consturctor ,servlet will instantiate or not?
+
+
+
+Spring MVC:
+--------------------------
+Purpose of ContextLoaderListener – Spring MVC
+How do you setup LDAP Authentication using Spring Security?
+How do you control concurrent Active session using Spring Security?
+What are the difference between BeanFactory and ApplicationContext in spring?
+
+What are different modules in spring?
+singletona and prototype bean in spring and in side singeton can i have prototype inner bean 
+
+
+
+Core java
+-------
+New features in java 1.6 and 1.5
+
+
+-Why wait and notify is declared in Object class instead of Thread ?
+how substring will impact memory leak.
+Why char array is preferred to store password than String in Java?
+
+Java support multiple inhertence?
+How to Serialize and object in java
+Marker interface, user defined marker interface
+Equlas and hash code
+Object class methd , why its having , where we are using this class
+Overrided hash code in  my class , is it generates again or not
+9) How HashSet store elements?
+10) Can a null element added to a TreeSet or HashSet?
+13) Explain ConcurrentHashMap? How it works?
+14) How hashmap works? hashmap internal implementation , and bucket concent
+27) How to make a collection read only?
+28) How to make a collection thread safe?
+38) What is Comparable and Comparator interface?	
+Why Collection interface does not extend Cloneable and Serializable interface?
+4) Why Map interface does not extend Collection interface?
+17.What is volatile keyword in Java
+19.How to create daemon thread in Java?
+20.What is ThreadLocal?
+22.What is Java Thread Dump, How can we get Java Thread dump of a Program?
+diff wait() and sleep
+.What is Lock interface in Java Concurrency API? What are it’s benefits over synchronization?
+.What is Executors Framework?
+.What is Callable and Future?
+.What is FutureTask class?
+
+How to manage using multithreading of 10000 user accessing an application at a time ?
+If syncronized it will allow one thread a time , other requests will has to wait? wht is technical solution
+
+Hibernate:
+--------------
+Core interfaces in hibernate framework
+Hibernate Template
+Hibernate proxy 
+Collection types in hibernate
+Sessiion factory is thread safe?
+What is Session in Hibernate? Can we share single Session among multiple threads in Hibernate?
+
+How to write a interceprtor and how to integrate in AOP
+transient and ditached objects in hibernate
+
+Types of caches and how it works in hiberante
+
+wht is call back interface in hibernate
+diffrent fetching strategys in hibernate
+ID filed in hibernate entity
+version id ?
+How to execute stored procedure in hibernate
+Lazy fetching in hibernate
+
+Many to many releation how it will works?
+
+Struts:
+------
+Are Interceptors in Struts2 thread safe ?
+Are Interceptors and Filters different ? , If yes then how ?
+Which class is the front-controller in Struts2 ?
+How do you configure the annotation based action mapping ?
+
+Design patterns
+
+------------------
+GOF design principles
+which SDLC modal using and process
+
+How to create Factory design pattern and use
+Facade and service locator
+Template design pattern
+
+
+

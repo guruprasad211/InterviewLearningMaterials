@@ -1,0 +1,17 @@
+Immutable class : 
+Hibernate serial id
+Runtime exception how to catch
+custom exception
+string store in ? heap or premgen
+annotation for Rest
+spring ioc
+Bean by defalut scope?
+HQL
+Executer
+Thread safe class
+singleton class
+clone ?
+no synchrinization ? thread safe
+Array[ints] milltions , how to find num 10 with out loop
+String y final?
+

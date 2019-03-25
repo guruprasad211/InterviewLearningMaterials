@@ -1,0 +1,157 @@
+
+
+Multi-Threading
+
+¦What language features are available to allow shared access to data in a multi-threading environment? (Hint: Synchronized block,Synchronized method,wait, notify)
+¦What is the difference between synchronized method and synchronized block? (Hint:Block on subset of data. Smaller code segment).
+¦What Java language features would you use to implement a producer (one thread) and a consumer (another thread) passing data via a stack? (Hint: wait, notify)
+
+Java language
+
+¦What Java classes are provided for date manipulation? (Hint:Calendar, Date)
+¦What is the difference between String and StringBuffer? (Hint: mutable, efficient)
+¦How do you ensure a class is Serializable? (Hint:Implement Serializable)
+¦What is the difference between static and instance field of a class? (Hint:Per class vs. Per Object)
+¦What methods do you need to implement to store a class in Hashtable or HashMap? (Hint: hashCode(), equals()) .
+¦How do you exclude a field of a class from serialization? (Hint: transient)
+
+
+
+
+
+
+Inheritance
+
+¦What is the difference between an Interface and an abstract base class? (Hint: interface inheritance, implementation inheritance.)
+¦What does overriding a method mean? (Hint: Inheritance)
+¦What about overloading? (Hint: different signature)
+
+Memory
+
+¦What is the Java heap, and what is the stack? (Hint: dynamic, program thread execution.)
+¦Why does garbage collection occur and when can it occur? (Hint: To recover memory, as heap gets full.)
+¦If I have a circular reference of objects, but I no longer reference any of them from any executing thread, will these cause garbage collection problems? (Hint: no)
+
+Exceptions
+
+¦What is the problem or benefits of catching or throwing type “java.lang.Exception”? (Hint: Hides all subsequent exceptions.)
+¦What is the difference between a runtime exception and a checked exception? (Hint: Must catch or throw checked exceptions.)
+
+JSP
+
+¦What is the best practice regarding the use of scriptlets in JSP pages? Why? (Hint: Avoid)How can you avoid scriptlet code? (Hint:custom tags, Java beans)
+¦What do you understand by the term JSP compilation? (Hint: compiles to servlet code)
+
+Servlets
+
+¦What does Servlet API provide to store user data between requests? (Hint: HttpSession)
+¦What is the difference between forwarding a request and redirecting? (Hint: redirect return to browser )
+¦What object do you use to forward a request? (Hint: RequestDispatcher)
+¦What do you need to be concerned about with storing data in a servlet instance fields? (Hint: Multi-threaded.)
+¦What’s the requirement on data stored in HttpSession in a clustered (distributable) environment? (Hint: Serializable)
+¦If I store an object in session, then change its state, is the state replicated to distributed Session? (Hint: No, only on setAttribute() call.)
+¦How does URL-pattern for servlet work in the web.xml? (Hint: /ddd/* or *.jsp)
+¦What is a filter, and how does it work? (Hint: Before/after request, chain.)
+
+JDBC
+
+¦What form of statement would you use to include user-supplied values? (Hint: PreparedStatement)
+¦Why might a preparedStatement be more efficient than a statement? (Hint: Execution plan cache.)
+¦How would you prevent an SQL injection attack in JDBC? (Hint: PreparsedStatement )
+¦What is the performance impact of testing against NULL in WHERE clause on Oracle? (Hint: Full table scan. )
+¦List advantages and disadvantages in using stored procedures? (Hint: Pro: integration with existing dbase, reduced network trafficCon: not portable, mutliple language knowledge required )
+¦What is the difference between sql.Date, sql.Time, and sql.Timestamp? (Hint: Date only, time only, date and time )
+¦If you had a missing int value how do you indicate this to PreparedStatement? (Hint: setNull(pos, TYPE))
+¦How can I perform multiple inserts in one database interaction? (Hint: executeBatch)Given this problem: Program reads 100,000 rows, converts to Java class in list, then converts list to XML file using reflection. Runs out of program memory. How would you fix? (Hint: Read one row at time, limit select, allocate more heap (result set = cursor) )
+¦How might you model object inheritance in database tables? (Hint: Table per hierarchy, table per class, table per concrete class)
+
+JNDI
+
+¦What are typical uses for the JNDI API within an enterprise application? (Hint: Resource management, LDAP access)
+¦Explain the difference between a lookup of these “java:comp/env/ejb/MyBean” and “ejb/MyBean”? (Hint: logical mapping performed for java:comp/env )
+¦What is the difference between new InitialContext() from servlet or from an EJB? (Hint: Different JNDI environments initialized EJB controller by ejb-jar.xml, servlet by web.xml.)
+¦What is an LDAP server used for in an enterprise environment? (Hint: authentication, authorization)
+¦What is authentication, and authorization? (Hint: Confirming identity, confirming access rights )
+
+EJB
+
+¦What is the difference between Stateless and Stateful session beans (used?) (Hint: Stateful holds per client state )
+¦What is the difference between Session bean and Entity bean (when used?) (Hint: Entity used for persistence )
+¦With Stateless Session bean pooling, when would a container typically take a instance from the pool and when would it return it? (Hint: for each business method )
+¦What is the difference between “Required”, “Supports”, “RequiresNew” “NotSupported”, “Mandatory”, “Never”? (Hint: Needs transaction, existing OK but doesn’t need, must start new one, suspends transaction, must already be started, error if transaction)
+¦What is “pass-by-reference” and “pass-by-value”, and how does it affect J2EE applications? (Hint: Reference to actual object versus copy of object. RMI pass by value.)
+¦What EJB patterns, best practices are you aware of? Describe at least two? (Hint: Façade, delegate, value list, DAO, value object).
+¦Describe some issues/concerns you have with the J2EE specification? (Hint: Get their general opinion of J2EE)
+¦What do you understand by the term “offline optimistic locking” or long-lived business transaction? How might you implement this using EJB? (Hint: version number, date, field comparisons.)
+¦Explain performance difference between getting a list of summary information (e.g. customer list) via finder using a BMP entity vs. Session using DAO? (Hint: BMP: n+1 database reads, n RMI calls.)
+¦What is meant by a coarse-grained and a fine-grained interface? (Hint: Amount of data transferred per method call)
+
+XML/XSLT
+
+¦What is the difference between a DOM parser and a SAX parser? (Hint: DOM: reads entire model, SAX: event published during parsing.)
+¦What is the difference between DTD and XML Schema? (Hint: level of detail, Schema is in XML.)
+¦What does the JAXP API do for you? (Hint: Parser independence. )What is XSLT and how can it be used? (Hint: XML transformation. )
+¦What would be the XPath to select any element called table with the class attribute of info? (Hint: Table[@class=’info’])
+
+JMS
+
+¦How can asynchronous events be managed in J2EE? (Hint: JMS)
+¦How do transactions affect the onMessage() handling of a MDB? (Hint: Taking off queue. )
+¦If you send a JMS message from an EJB, and transaction rollback, will message be sent? (Hint: yes)
+¦How do you indicate what topic or queue MDB should react to? (Hint: deployment descriptor )
+¦What is the difference between a topic and a queue? (Hint: broadcast, single)
+
+SOAP
+
+¦What is a Web service, and how does it relate to SOAP? (Hint: SOAP is the protocol.)
+¦What is a common transport for SOAP messages? (Hint: HTTP )
+¦What is WSDL? How would you use a WSDL file? (Hint: XML description of Web Service: interface and how to bind to it. )
+¦With new J2EE SOAP support what is: JAXR, JAX-RPC, and SAAJ? (Hint: registry, rpc, attachments)
+
+Security 
+
+¦Where can container level security be applied in J2EE application? (Hint: Web Uri’s, EJB methods)
+¦How can the current user be obtained in a J2EE application (Web and Enterprise)? (Hint: getUserPrincipal, getCallerPrincipal )
+¦How can you perform role checks in a J2EE application (Web and enterprise)? (Hint: IsUserInRole(), IsCallerInRole() )
+
+
+
+
+
+
+Design
+
+¦Name some types of UML diagrams? (Hint: class, sequence, activity, use case)
+¦Describe some types of relationships can you show on class diagrams? (Hint: generalization, aggregation, uses)
+¦What is the difference between association, aggregation, and generalization? (Hint: Relationship, ownership, inheritance)
+¦What is a sequence diagram used to display? ( Hint: Object instance interactions via operations/signals)What design patterns do you use. Describe one you have used (not singleton)? (Hint: e.g. Builder, Factory, Visitor, Chain of Command )
+¦Describe the observer pattern and an example of how it would be used (Hint: e.g. event notification when model changes to view )
+¦What are Use Cases? (Hint: Define interaction between actors and the system )What is your understanding of encapsulation? (Hint: Encapsulate data and behavior within class )
+¦What is your understanding of polymorphism? (Hint: Class hierarchy, runtime determine instance )
+
+Process
+
+¦Have you heard of or used test-driven development? (Hint: e.g. XP process )
+¦What development processes have you followed in the past? (Hint: Rational, XP, waterfall )
+¦How do you approach capturing client requirements? (Hint: Numbered requirements, use cases )
+¦What process steps would you include between the capture of requirements and when coding begins? (Hint: Architecture, Design, UML modeling, etc )
+¦How would you go about solving performance issue in an application? (Hint: Set goals, establish bench, profile application, make changes one at a time )
+¦What developer based testing are you familiar with (before system testing?) (Hint: Unit test discussion )
+¦How might you test a business system exposed via a Web interface? (Hint: Automated script emulating browser)
+¦What is your experience with iterative development? (Hint: Multiple iteration before release)
+
+Distributed Application
+
+¦Explain a typical architecture of a business system exposed via Web interface? (Hint: Explain tiers (presentation, enterprise, resource) Java technology used in each tiers, hardware distribution of Web servers, application server, database server )
+¦Describe what tiers you might use in a typical large scale (> 200 concurrent users) application and the responsibilities of each tier (where would validation, presentation, business logic, persistence occur). (Hint: Another way of asking same question as above if their answer wasn’t specific enough)
+¦Describe what you understand by being able to “scale” an application? How does a J2EE environment aid scaling? (Hint: Vertical and Horizontal scaling. Thread management, clustering, split tiers )
+¦What are some security issues in Internet based applications? (Hint: authentication, authorization, data encryption, denial service, xss attacks, SQL injection attacks )
+
+General
+
+¦What configuration management are you familiar with? (Hint: e.g. CVS, ClearCase )
+¦What issue/tracking process have you followed? (Hint: Want details on bug recording and resolution process).
+¦What are some key factors to working well within a team? (Hint: Gets a view on how you would work within interviewer’s environment.)
+¦What attributes do you assess when considering a new job? (what makes it a good one)? (Hint: Insight into what motivates you.)
+¦What was the last computing magazine you read? Last computing book?
+¦What is a regular online magazine/reference you use? (Hint: Understand how up to date you keep yourself.)

@@ -1,0 +1,57 @@
+http://www.oracle.com/technetwork/articles/java/fork-join-422606.html
+
+http://javadecodedquestions.blogspot.in/2012/12/java-memory-management.html
+
+http://howtodoinjava.com/core-java/multi-threading/when-to-use-countdownlatch-java-concurrency-example-tutorial/
+
+Core java:
+
+
+
+countdownlatch
+cyclcik barrier
+volatile
+
+
+
+String & String Builder & Buffer
+Equals and hashcode
+
+Collections
+Concurency API
+Linked and circular linked list
+core pacakges in java
+
+
+struts:
+
+new features in struts 2
+Struts flow
+
+
+spring:
+spring modules
+spring AOP and IOC
+Spring mVC annotations and examples
+
+
+Hibernate:
+Interfaces and interceptors
+sessions
+caches 
+execution flow
+
+
+
+
+Design patterns
+singleton 
+Factory
+Adapter
+Strtegy
+Template
+Facade
+Service locator
+Adapter
+Bridge
+

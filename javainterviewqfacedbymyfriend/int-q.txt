@@ -1,0 +1,52 @@
+Collision and cohession
+Coupling and loosly coupling
+Clone
+interface and impl - why cont we can call impl 
+
+spring configuration for class a and B no code change - but need to use Class c
+
+List<Object> vs Object[]
+List<String> vs String[]
+
+Immutable class , how to create , Data d=new Date() , can update date 
+
+Class A Extends B , A a=new B; ?? B b=new A;
+
+Servlet context for multiple webappls deployed in tomcat
+
+
+How to write markerinterface 
+
+Why object class have all other methods
+Inside static method can have not static method or variables
+
+
+in servlets how to know the request and responce time
+Session trackong managment
+Cookies 
+
+
+security - authorization and authentication in application
+Security frameworks
+GC alogritham - JVM uses
+index in sql - Pros and cons
+
+
+
+how to use security for application (java or WS)
+How spring security integrate and how it works internally
+How clone (deep and shallow)
+Concurrency API - Executer and concurrency API
+FailFat and FailSafe
+semaphore
+HashMap Implementation 
+TreeMap
+comparable and comparator - Generic compartor
+Threadpoolexecuter imple
+serialization/clone
+singleton
+readResolve
+Volatile
+
+serialization Parent and chaild classes 
+
